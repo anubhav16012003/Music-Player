@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins',sans-serif;
+}
+
+body{
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+}
+
+.main{
+    position: relative;
+    overflow: hidden;
+    /* height: 77vh; */
+    width: clamp(320px, 77vh, 1200px);
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    box-shadow: 0.1px 4px 8px 4px rgba(0,0,0,0.5);
+    background-size: 400% 400%;
+    animation: bgchange 15s ease infinite;
+}
+
+.top_section{
+    margin: 1em 0;
+    display: relative;
+  }
+
+ .top_section h5{
+      color: #fff;
+      text-align: center;
+      font-size: 1.5em;
+      font-family: 'Charmonman', cursive;
+  }
+  .top_section a{
+    text-decoration: none;
+    color: antiquewhite;
+  }
+  .top_section p{
+    display: aboslute;
+    text-align: center;
+    margin: -49px 90px 31px 79px;
+    
+  }
+  .top_section img{
+    border-radius: 43px;
+  }
+  .material{
+    padding: 29px;
+  }
+
+  .anubhav{
+    height: 70px;
+    width: 70px;
+  }
+
+  .shubham{
+      height: 70px;
+      width: 70px;
+  }
+
+  .adarsh{
+    height: 70px;
+    width: 70px;
+  }
+
+  @keyframes bgchange {
+    0%{
+      background-position: 0% 50%;
+    }
+    /* 25%{
+      background-image: linear-gradient(to bottom right,#cc2b5e,  #753a88);
+    } */
+    50%{
+      background-position: 50% 100%;
+    }
+    /* 75%{
+      background-image: linear-gradient(#e66465, #9198e5);
+    } */
+    100%{
+      background-position: 0% 50%;
+    }
+  }
